@@ -1,0 +1,11 @@
+run:
+linters:
+  enable:
+    - gocritic
+    - exhaustruct
+linters-settings:
+  exhaustruct:
+    exclude:
+      - '.+/graph\.Config$'
+      - '.+/graphql\.FieldContext$'
+      - '.+/graphql\.Response$'
